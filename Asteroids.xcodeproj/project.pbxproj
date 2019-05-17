@@ -41,6 +41,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D32290C228F01A800C06E0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9140FB702278B392007468B4 /* Viper.swift */,
+				91FF5322227AD115004B8DD8 /* Actor.swift */,
+				91FF5324227AD436004B8DD8 /* Asteroid.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D32290D228F01CF00C06E0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9140FB622278B37E007468B4 /* Main.storyboard */,
+				9140FB652278B380007468B4 /* Assets.xcassets */,
+				9140FB672278B380007468B4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9140FB522278B37E007468B4 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +82,9 @@
 			children = (
 				9140FB5E2278B37E007468B4 /* AppDelegate.swift */,
 				9140FB602278B37E007468B4 /* ViewController.swift */,
-				9140FB622278B37E007468B4 /* Main.storyboard */,
-				9140FB652278B380007468B4 /* Assets.xcassets */,
-				9140FB672278B380007468B4 /* LaunchScreen.storyboard */,
+				0D32290D228F01CF00C06E0A /* View */,
 				9140FB6A2278B380007468B4 /* Info.plist */,
-				9140FB702278B392007468B4 /* Viper.swift */,
-				91FF5322227AD115004B8DD8 /* Actor.swift */,
-				91FF5324227AD436004B8DD8 /* Asteroid.swift */,
+				0D32290C228F01A800C06E0A /* Model */,
 			);
 			path = Asteroids;
 			sourceTree = "<group>";
