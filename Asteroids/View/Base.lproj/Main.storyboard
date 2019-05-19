@@ -13,32 +13,89 @@
         <!--SIMPLE MOVEMENT-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FrameByFrame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="FrameByFrame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_field_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Xf-B94">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SPACE_1" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Xf-B94">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="WBk-LW-Qqv">
+                                <rect key="frame" x="16" y="20" width="30" height="20"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EVS-Z9-z8I"/>
+                                    <constraint firstAttribute="width" constant="30" id="uEC-PU-Y8y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="LZg-ar-m6R">
+                                <rect key="frame" x="54" y="20" width="30" height="20"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1Os-Jc-c7R"/>
+                                    <constraint firstAttribute="height" constant="20" id="rn5-IM-bGo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="G6j-Sw-cLA">
+                                <rect key="frame" x="92" y="20" width="30" height="20"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="N4p-mN-kyr"/>
+                                    <constraint firstAttribute="height" constant="20" id="a7M-hR-3LC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fn-WL-GSK">
+                                <rect key="frame" x="319" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="hQO-3o-BXm"/>
+                                    <constraint firstAttribute="height" constant="30" id="msk-C5-kIB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ilM-Xf-B94" secondAttribute="bottom" id="6pK-6U-Eut"/>
                             <constraint firstItem="ilM-Xf-B94" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7XB-45-c3F"/>
+                            <constraint firstItem="WBk-LW-Qqv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DMk-Fw-Zbl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fn-WL-GSK" secondAttribute="trailing" constant="26" id="EYl-m7-Obn"/>
+                            <constraint firstItem="ilM-Xf-B94" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FE0-49-Of4"/>
                             <constraint firstItem="ilM-Xf-B94" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KQ8-WY-mxD"/>
-                            <constraint firstItem="ilM-Xf-B94" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="leE-ko-Dd4"/>
+                            <constraint firstItem="WBk-LW-Qqv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MiM-i1-4L3"/>
+                            <constraint firstItem="G6j-Sw-cLA" firstAttribute="leading" secondItem="LZg-ar-m6R" secondAttribute="trailing" constant="8" id="UBP-KB-MST"/>
+                            <constraint firstItem="LZg-ar-m6R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UIC-5G-njV"/>
+                            <constraint firstItem="ilM-Xf-B94" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Usq-HD-IpB"/>
+                            <constraint firstItem="G6j-Sw-cLA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZC4-a2-018"/>
+                            <constraint firstItem="1fn-WL-GSK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pcA-lW-8cJ"/>
+                            <constraint firstItem="LZg-ar-m6R" firstAttribute="leading" secondItem="WBk-LW-Qqv" secondAttribute="trailing" constant="8" id="pgx-5b-FxJ"/>
                             <constraint firstAttribute="trailing" secondItem="ilM-Xf-B94" secondAttribute="trailing" id="qPB-Dq-9QD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SIMPLE MOVEMENT" id="ter-EE-MAW"/>
+                    <connections>
+                        <outlet property="heart1" destination="G6j-Sw-cLA" id="u7t-Mk-Pmz"/>
+                        <outlet property="heart2" destination="LZg-ar-m6R" id="q8u-Fk-Th2"/>
+                        <outlet property="heart3" destination="WBk-LW-Qqv" id="eRB-eL-NxB"/>
+                        <outlet property="scoreBoard" destination="1fn-WL-GSK" id="VGy-ZC-gyB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1076" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>
-        <image name="star_field_iphone" width="320" height="480"/>
+        <image name="Heart" width="60" height="50"/>
+        <image name="SPACE_1" width="900" height="1600"/>
     </resources>
 </document>
